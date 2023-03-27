@@ -1,0 +1,274 @@
+<!DOCTYPE html> <!-- ovo je instrukcija da se radi o HTML5 kodu -->
+<html>
+<head>
+    <!-- Da bi na stranici imali afrikate. -->
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <!-- Link za povezivanje ovog html dokumenta sa njegovim css-om -->
+    <link rel="stylesheet" href="blog1.css"> 
+
+    <!-- Svi dole navedeni linkovi koju su vezani za bliblioteke, poput jQuery, Bootstrap, JavaScript i slično tome, su kopirani sa stranice 
+    W3school: https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp -->
+
+    <!--Bootstrap biblioteka, koju sam ukljucila da bi kompletna stranica bila responsive. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery biblioteka -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+    <!-- JavaScript biblioteka, koja omogućava da sve komponente funcionišu. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+   <!-- Na osnovu ovog linka je napravljena ikonica u tabu pretraživača. Slika je preuzeta sa interneta. 
+    Link za sliku se nalazi ovdje: https://cloud.in-stories.com/pack1/37/highlights-cover1.jpg -->
+    <link rel="icon" type="image" href="../Pocetna/Slike_Pocetna/Ikonica_u_tabu.png"> 
+
+    <!-- Naslov samog projekta, odnosno naslov svake podstranice na mojoj stranici. -->
+    <title> Blog 1 - Web Dizajn  </title> 
+</head>
+
+<body>
+    <header> 
+        <!-- Dio koji predstavlja klasu koja mi je potrebna za horizontalni meni, da bi u CSS-u napravila izgled.-->
+        <div class="horizontalni_meni" id="top">
+
+        <!-- Također, dio sa mojom slikom, sa transperentnom pozadinom koja omogućava kada god kliknemo na nju da se vrati na moju početnu 
+        stranicu. Transparentnu sliku sam napravila pomoću ove stranice. Njen link: https://www.remove.bg/upload -->
+        <a href="../Pocetna/pocetna.html"> <img  id="slika" src="../Pocetna/Slike_Pocetna/Transparentna_slika.png" alt="Transparentna slika"> </a> 
+
+        <!-- Dio koji predstavlja navigacijski bar koji je isti za svaku podstranicu. -->
+        <!-- Također, one su međusobno povezane. -->
+        <a href="../Pocetna/pocetna.html"> Početna stranica </a>
+        <a href="../Blog1/blog1.html"> Web Design </a>
+        <a href="../Blog2/blog2.html"> Adobe Photoshop </a>
+        <a href="../Galerija1/galerija1.html"> Galerija 1 </a>
+        <a href="../Galerija2/galerija2.html"> Galerija 2 </a> 
+    </header>
+
+    <!-- Horizontalna linija predstavlja da odvojimo cjeline. -->
+    <hr class="linija">
+    
+    <!-- Dio koji predstavlja vertikalni meni na samom početku stranice. Svaki dio ove stranice je povezan sa vertikalnim menijem. 
+    Dio sa vertikalnim menijem zauzima 12 kolona, tj čitav red -->
+    <div class="container ">
+        <div class="row">
+            <div class="vertikalni_meni col-sm-12">
+                <ul class="sadrzaj">
+            <a href=#WebDesign> Šta je web design? </a> <br>
+            <a href=#Elementi> Elementi web design-a </a> <br>
+            <a href=#Historija> Historija web design-a </a> <br>
+            <a href=#Napredak> Napredak web design-a </a> <br>
+            <a href=#Razvoj> Razvoj web design-a </a> <br>
+            <a href=#Razdoblja> Četiri glavna razdoblja u web design-u </a> <br>
+            <a href=#Literatura> Literatura </a> <br>
+                </ul>
+
+            <!-- Horizontalna linija predstavlja da odvojimo cjeline, u ovom slučaju vertikalni meni i sliku. -->
+            <hr class="linija">
+
+            <!-- Dio sa slikom koja se nalazi u vertikalnom meniju. Ova slika zauzima 12 kolona jednog reda. -->
+            <div class="row"> 
+                <div class="slika col-12">
+                <img id="slika2" src="../Blog1/Slike_blog1/Web-design-1.jpg" alt="Web Design">
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    
+    <!-- Horizontalna linija predstavlja da odvojimo cjeline. -->
+    <hr class="linija">
+
+        <!-- Dio u kojem sam pisala o tome šta je web design. Ovaj dio zauzima 12 kolona. -->
+        <div class="row">
+            <div class="web_design col-sm-12" id="WebDesign">
+                <article>
+                    <h1 class="bold"> WEB DESIGN </h1>
+                    <h3 class="bold"> Šta je web design? </h3>
+                    <p> Web design je u suštini dizajniranje web stranica. Pomoću njega mi pravimo samu organizaciju web stranice, njenu koncepciju i njene detalje. Web design nam je veoma bitan iz razloga jer nam on govori mnogo o samom sadržaju stranice, ali isto tako i o osobi koja je radila sami taj design i kompletnu stranicu. Neadekvatan web design neke stranice može biti vrlo loš za korisnike i čitatelje jer ne zadržava dovoljno pažnje, a ujedno nemaju dovoljan sadržaj da se informišu i dobiju konkretne informacije, kao i sam uticaj na firme koje posjeduje web stranicu, jer je to vid njihove reklame, odnosno promovisanja.  </p>
+                
+                <!-- U tom istom redu se nalazi i slika.-->
+                    <img id="slika3" src="../Blog1/Slike_blog1/Web_Dizajn.jpg" alt="Web Design">
+                </article>
+            </div>
+        </div>
+
+        <hr class="linija">
+
+          <!-- Dio u kojem sam pisala od elementima web design-a, ali kroz listu. Ovaj dio zauzima 12 kolona. -->
+        <div class="row elementi">
+            <div class="col-sm-12" id="Elementi">
+                    <h3 class="bold"> Elementi web desin-a </h3>
+                    <p> Prave web stranice koje vidimo u 90% slučajeva na internetu su kucane u HTML-u. Moram naglasiti da HTML nije programski jezik, već je to jezik za označavanje i koji dozvoljava da u njemu kreiramo sadržaj odnosno sami izgled stranice, stavljajući u njega odlomke, naslove, slike i mnoge druge stvari koje su nam potrebne da bi naša stranica bila potpuna. 
+                    Također, razni elementi su nam potrebni: 
+                    <ul>
+                        <li> HTML – označavanje; </li>
+                        <li> CSS - uređivanje; </li>
+                        <li> JavaScript - funkcionalnost;</li>
+                        <li> Multimedija;</li>
+                        <li> MySQL - baza podataka;</li>
+                        <li> Organizacija;</li>
+                        <li> PHP </li>
+                    </ul>
+                </p>
+            </div>
+                <img id="elementi_slika" src="../Blog1/Slike_blog1/Elementi_web_dizajna.jpg" alt="Elementi_web_dizajna">     
+        </div>
+
+        <hr class="linija">
+
+        <!-- Dio u kojem sam pisala od historiji web design-a. -->
+        <div class="row historija">
+            <div class="col-sm-12" id="Historija">
+                <article>
+                    <h3 class="bold"> Historija web design-a (1988 - 2012) </h3>
+                    <p> 1980.godine, čovjek zvani Tim Berners-Lee koji je stvorio globalni projekat hiperteksta, koji se kasnije zvao World Wide Wibe i služio je za informacije. Isto tako, ovo je razlog za početak protokola koji se zove HTTPD. 1993.godine kreiran je preglednik koji se zove Mosaic, a kreirali su ga dva naučnika Marc Andreessen i Eric Bina. Godinu dana kasnije, kreirana je nova verzija Mosaic-a koja se zove Mosaic Communication Corp. Trenutno taj preglednik je piznat kao Netscape Communications.  </p> 
+                    <p> Mogu samo reći da od 1996 do 1999.godine je postojalo mnogo verzija HTML, kao i same JavaScript. Ali, 2000-te godine se desila velika promjena, jer je došlo do prevelike upotrebe web design-a, što je uticalo da se verzije HTML, CSS i JavaScript poboljšaju, što je i uspjelo. Jer, danas imamo mnogo olakšica za izradu web stranica u ovim jezicima, kao i brzinu i jednostavnost. </p>
+                
+                <!-- Dio u kojem se nalazi slika. -->
+                <div class="col-sm-12 historija_slika">
+                    <img id="historija_slika" src="../Blog1/Slike_blog1/Tim.jpg" alt="Tim Berners-Lee">
+                </div>
+                </article>
+            </div>
+        </div>
+
+        <hr class="linija">
+
+        <!-- Dio u kojem sam pisala od napretku web design-a. . -->
+        <div class="row napredak">
+            <div class="col-sm-12" id="Napredak">
+                <article>
+                    <h3 class="bold">  Napredak web design-a </h3>
+                    <p> Sami napredak web design-a je omogućio korisnicima da prenesu svoju maštu i kreativnost na web stranicu i tako svakog korisnika ispuni zadovoljnim, uspješnim i sretnim, jer je svoju misao prenio na kompjuter. Prije nije bilo toliko izvodljivo, jer dosta stvari u HTML i CSS su bile teške. Naravno, s vremenom, napredkom i razvojom došli smo do vremena gdje je HTML puno kompleksniji, ali mnogo jednostavan za naučiti i za upotrebu. Sada se korisniku puno više daje, puno više mu se uslova ispunjava nego prije. Neki od tih uslova je da se ubaci slika, tekst, lista, video, tabela i mnogo drugih raznih opcija, koje se mogu odmah urediti u samom kodu. Mogu još reći da je i CSS napredovao, pa ga koristimo u kombinaciji sa HTML, gdje kompletan sadržaj stranice posebno uređujemo u CSS, a ne u HTML. Iako ima ljudi koji prakticiraju odmah uređenje u HTML-u. </p>                
+                </article>
+            </div>
+
+            <!-- Dio u kojem se nalazi slika, koja zauzima 12 kolona. -->
+            <div class="col-sm-12  napredak_slika">
+                <img id="napredak_slika" src="../Blog1/Slike_blog1/napredak_web_dizajna.jpg" alt="Napredak_web_design-a">
+            </div>
+        </div>
+
+        <hr class="linija">
+
+        <!-- Dio u kojem sam pisala o samom razvoju web design-a. -->
+        <div class="row razvoj">
+            <div class="col-sm-12 " id="Razvoj">
+                <article>
+                    <h3 class="bold"> Razvoj web design-a </h3>
+                    <p> Kada je riječ o razvoju web design-a, ne smijemo zaboraviti stručnjaka, čovjeka bez kojeg razvoj web design-a ne bi bio moguć. Njegovo ime je Jacob Nielsen. Zbog njega koji je omogućio taj razvoj, dolazimo da se možemo nadovezati na prethodni dio, gdje sama izrada web stranica postaje lakša i jednostavnija za upotrebu, pored njene kompleksnosti. Sve to nekako sadrži prostu navigaciju koja je pogodna za svakog od nas, koji stvaramo, koji gledamo, koji koristimo, a i za one koji čitaju.  </p>
+            </div>
+        
+            <!-- U ovom dijelu se nalazi slika. -->
+                    <div class="col-sm-12">
+                        <img id="razvoj_slika" src="../Blog1/Slike_blog1/Jakob Nielsen.jpg" alt="Jakob Nielsen">
+                    </div>
+                </article>
+        </div>
+
+        <hr class="linija">
+
+        <!-- Dio koji sam predstavila kroz tabelu i u njemu sam opisala četiri glavna razdoblja web design-a. Ovaj dio
+        zauzima 12 kolona. -->
+        <div class="row">
+            <div class="col-sm-12 razdoblja" id="Razdoblja">
+                <article>
+                    <h3 class="bold"> Četiri glavna razdoblja u web design-u </h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Generacija </th>
+                            <th class="sredina"> Opis </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="sirina"> I Generacija </td>
+                            <td> Mosaic je prvi preglednik koji je kreiran, HTML se razvija, i postaje popularniji i napredniji. </td>
+                        </tr>
+                        <tr>
+                            <td class="sirina"> II Generacija </td>
+                            <td> Napredovanjem HTML i razvojom gdje su se omogućile minimalnije stvari za izradu web stranica, je došlo do prekomjernog širenja i upotrebe web design-a, jer je olakšalo i pjednostavilo korisnicima upotrebu.  </td>
+                        </tr>
+                        <tr>
+                            <td class="sirina"> III Generacija</td>
+                            <td> Ali ponovnim napredovanje, gdje se korisnicima pruža mogućnost ubacivanje slike, snimki, animacija, je još više zainteresovalo korisnike, za boljom izradom, kao i samom privlačenjem klijenata na njihovu web stranicu.  </td>
+                        </tr>
+                        <tr>
+                            <td class="sirina"> IV Generacija</td>
+                            <td> Sada je to mnogo naprednije, jer možemo pronaći razne web stranice koje imaju svrhu za naručivanje raznih stvari putem interneta, za prodaju i slično. Tim napredovanjem je korisnicima omogućilo zadovoljstvo i vrlo jaku funkcionalnost, a klijentima uštedu vremena za trgovine, kao i pažnju i priliku za viđenjem novih stvari.  </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </article>
+            </div>
+        </div>
+
+        <hr class="linija"> 
+
+        <!-- Dio u kojem se nalaze svi linkovi od web stranica sa kojih sam prikupljala literaturu za ovaj dio stranice, kao i
+        linkovi slika, jer su sve preuzete sa interneta. Ovaj dio zauzima 12 kolona jednog reda kada je ekran od srednjeg do većeg i 12 kolona
+        kada je ekran od manjeg do srednjeg.-->
+        <div class="row literatura">
+            <div class="col-sm-6 col-md-12" id="Literatura">
+                <h2 class="bold"> Literatura </h2>
+                <h4> Web stranice: </h4>
+                <p>
+                    <ul>
+                        <li class="stil"> <a class="boja" href="https://www.popwebdesign.net/web-dizajn.html" target="_blank"> Pop Web Design </a>
+                        </li>
+                        <li class="stil"> <a class="boja" href="https://www.iqmedia.hr/izrada-web-stranica" target="_blank"> IQ Media </a>
+                        </li>
+                        <li class="stil"> <a class="boja" href="https://techterms.com/definition/web_design" target="_blank"> Tech Terms</a>
+                        </li>
+                        <li class="stil"> <a class="boja" href="https://www.interaction-design.org/literature/topics/web-design" target="blank"> Interaction Design </a>
+                        </li>
+                        <li class="stil"> <a class="boja" href="https://www.pagecloud.com/blog/web-design-guide" target="_blank"> Page Cloud </a>
+                        </li>
+                        <li class="stil"> <a class="boja" href="https://en.wikipedia.org/wiki/Web_design" target="_blank"> Wikipedia </a>
+                        </li>
+                        <li class="stil"> <a class="boja" href="https://www.hostinger.com/tutorials/what-is-html" target="_blank"> Hostinger </a>
+                        </li>
+                    </ul>
+                </p>
+
+                <h4> Web slike: </h4>
+                <p> 
+                    <ol> 
+                        <li class="stil"> <a class="boja" href="https://www.uxweb-design.com/wp-content/uploads/2019/10/Web-design-1.jpg" target="_blank"> Web Design 1 </a>
+                        </li>
+                        <li class="stil"> <a class="boja" href="https://webmajstor.ba/wp-content/uploads/2020/10/web-dizajn-za-pocetnike.jpg.jpg" target="_blank"> Web Dizajn </a>
+                        </li> 
+                        <li class="stil"> <a class="boja" href="https://estart.hr/images/upload/images/objave/karakteristike-web-stranice.jpg" target="_blank"> Elementi web design-a </a> 
+                        </li>
+                        <li class="stil"> <a class="boja" href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank"> Tim Berner-Lee </a>
+                        </li>
+                        <li class="stil"> <a class="boja" href="https://www.it-akademija.com/blog/alati-koje-treba-da-koristi-svaki-web-dizajner" target="_blank"> Napredak web design-a </a>
+                        </li>
+                        <li class="stil"> <a class="boja" href="https://miro.medium.com/max/1000/1*vv2k-yUPBhe_NaeufK9Jjw.png" target="_blank"> Jacob Nielsen </a>
+                        </li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <hr class="linija">
+
+    <!-- Ovo je footer koji se nalazi na svakoj stranici, sadrzi povratak na vrh stranice, moj instagram,
+    moj facebook. Instagram i facbook link vode na stranice mog profila. -->
+    <footer>
+        <div class="dno_stranice">
+            <a href="#top"> Povratak </a>
+            <a href="https://www.instagram.com/enaisen/" target="_blank"> Instagram </a>
+            <a href="https://www.facebook.com/enaisen/" target="_blank"> Facebook </a>
+        </div>
+    </footer>  
+</body>
+</html>

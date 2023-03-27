@@ -1,0 +1,201 @@
+<!DOCTYPE html> <!-- ovo je instrukcija da se radi o HTML5 kodu -->
+<html>
+<head>
+    <!-- Da bi na stranici imali afrikate. -->
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <!-- Link za povezivanje ovog html dokumenta sa njegovim css-om -->
+    <link rel="stylesheet" href="galerija2.css"> 
+
+    <!-- Svi dole navedeni linkovi koju su vezani za bliblioteke, poput jQuery, Bootstrap, JavaScript i slično tome, su kopirani sa stranice 
+    W3school: https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp -->
+
+    <!--Bootstrap biblioteka, koju sam ukljucila da bi kompletna stranica bila responsive. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery biblioteka -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+    <!-- JavaScript biblioteka, koja omogućava da sve komponente funcionišu. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Na osnovu ovog linka je napravljena ikonica u tabu pretraživača. Slika je preuzeta sa interneta. 
+    Link za sliku se nalazi ovdje: https://cloud.in-stories.com/pack1/37/highlights-cover1.jpg -->
+    <link rel="icon" type="image" href="../Pocetna/Slike_Pocetna/Ikonica_u_tabu.png"> 
+
+    <!-- Naslov samog projekta, odnosno naslov svake podstranice na mojoj stranici. -->
+    <title> Galerija 2 - Sportovi </title> <!-- Naslov samog projekta -->
+</head>
+<body>
+    <header> 
+        <!-- Dio koji predstavlja klasu koja mi je potrebna za horizontalni meni, da bi u CSS-u napravila sami izgled
+        tog menija. Prilagodila slova, linkove i mnoge druge stvari.-->
+        <div class="horizontalni_meni" id="top">
+
+        <!-- Također, dio sa mojom slika, sa transperentnom pozadinom koja omogućava kada god kliknemo na nju da se vrati na moju početnu 
+        stranicu. Transparentnu sliku sam napravila pomoću ove stranice. Njen link: https://www.remove.bg/upload -->
+        <a href="../Pocetna/pocetna.html"> <img  id="slika" src="../Pocetna/Slike_Pocetna/Transparentna_slika.png" alt="Transparentna slika"> </a> 
+
+        <!-- Dio koji predstavlja navigacijski bar koji je isti za svaku podstranicu. -->
+        <!-- Također, one su međusobno povezane. -->
+        <a href="../Pocetna/pocetna.html"> Početna stranica </a>
+        <a href="../Blog1/blog1.html"> Web Design </a>
+        <a href="../Blog2/blog2.html"> Adobe Photoshop </a>
+        <a href="../Galerija1/galerija1.html"> Galerija 1 </a>
+        <a href="../Galerija2/galerija2.html"> Galerija 2 </a> 
+        </div> 
+    </header>
+
+    
+    <!-- Horizontalna linija predstavlja da odvojimo cjeline. -->
+    <hr class="linija">
+
+    <!-- Slika tega u vertikalnom meniju je preuzeta sa interneta. Link slike se nalazi ispod, ovdje u komentaru:
+    https://i.pinimg.com/originals/57/47/93/57479329faacaf0eef73f0abbb010c82.png
+    Također i za ovu sliku sam napravila da bude transparentna, pomoću ove web stranice. Link za tu stranicu se nalazi ovdje ispod:
+    https://www.remove.bg/upload 
+    Ovaj dio zauzima 8 kolona za ekrane od manjeg do srednjeg i 8 kolona za ekrane od srednjeg do većeg. -->
+    <div class="container ">
+        <div class="row meni">
+            <div class="slika10 col-sm-8 col-md-8">
+                <img id="teg" src="../Galerija2/Slika_galerija2/Ikonica_sporta.png" alt="ikonica_sporta">
+            </div> 
+
+             <!-- Dio koji predstavlja vertikalni meni na samoj stranici. Svaki dio stranice je povezan sa vertikalnim menijem. 
+            Dio sa vertikalnim menijem zauzima 4 kolone. -->
+            <div class="vertikalni_meni col-sm-4">
+                <ul class="sadrzaj">
+            <a href=#Suđenje> Suđenje </a> <br>
+            <a href=#Fudbal>  Fudbal </a> <br>
+            <a href=#Odbojka>  Odbojka </a> <br>
+            <a href=#Skijanje>  Skijanje </a> <br>
+            <a href="#Video"> Snimak skijanja </a>
+                </ul>
+            </div>
+        </div> 
+
+        <hr class="linija">
+
+        <!-- Ovaj dio u jednom redu sadrži 4 slike i ispod svake te slike postoji opis. Svaka ta slika sa teskom je podjednako raspoređena.
+        Svaka slika s tekstom sadrži 3 kolone za ekrane od manjeg. -->
+        <div class="row">
+           <div class="col-sm-3 pozadina" id="Suđenje">
+            <figure >
+                <img id="slika11" src="../Galerija2/Slika_galerija2/Sudjenje_1.jpg" alt="Turnir">
+                <figcaption>
+                    <h5 class="bold"> Prvi ženski fubdlaski turnir </h5>
+                    Moj prvi ženski fudbalski turnir od samog početka suđenja. Ovo je bilo u Junu 2019 godine. Bila sam delegirana od strane Nogometnog Saveza BiH, održan je u Sarajevu, na pomoćnom stadionu Koševo. Ekipe su došle iz cijele Bosne i Hercegovine.
+                </figcaption>
+            </figure>
+           </div>
+
+           <div class="col-sm-3 pozadina1" id="Suđenje">
+               <figure>
+                   <img id="slika12" src="../Galerija2/Slika_galerija2/Sudjenje_2.jpg" alt="Dječiji turnir">
+                   <figcaption>
+                    <h5 class="bold"> Turnir za djevojčice </h5>
+                    Juli 2019 godine, učestvovala sam na jednom turniru koji je imao cilj druženja i upoznavanja, a iso tako da potakne sve djevojčice koje žele da treniraju fudbal ili neku drugu disciplinu, da to odmah urade i da se ne stide i da ne bježe od svojih snova i ciljeva.
+                </figcaption>
+               </figure>
+           </div>
+
+           <div class="col-sm-3 pozadina2" id="Suđenje">
+               <figure>
+                   <img id="slika13" src="../Galerija2/Slika_galerija2/Sudjenje_3.jpg" alt="Glavni sudija">
+                   <figcaption>
+                    <h5 class="bold"> Prvenstvena utakmica </h5>
+                    Ovo je utakmica uzrasta pionira koja je odigrana u Vogošći na glavnom stadionu "Hakija Mršo". Utakmica se izgarla između FK "Unis" i FK "Željezničar". Bila sam glavna sutkinja i imala sam svoja dva još pomoćnika.
+                </figcaption>
+               </figure>
+
+           </div>
+           <div class="col-sm-3 pozadina3" id="Suđenje">
+               <figure>
+                    <img id="slika14" src="../Galerija2/Slika_galerija2/Sudjenje_4.jpg" alt="Situacija na utakmici">
+                    <figcaption>
+                        <h5 class="bold"> Prva ženska Federalna liga</h5>
+                        Dakle, trenutno sam sutkinja na Prvoj Ženskoj Federalnoj ligi, Sutkinja A liste. Ova utakmica se igrala u Butmiru, u Kampu, između seniorki FK "Sarajevo" i NK "Sana 2014". Ovo je jedna situacija na utakmici, gdje je počinjen prekršaj nad igračicom Sarajeva.
+                    </figcaption>
+               </figure>
+           </div>
+        </div>
+
+        <hr class="linija">
+
+        <!-- Dio u kojem se nalaze 3 slike i ispod svake slike se nalazi opis te slike. Svaki dio slike i teksta zauzima podjednako.
+        Tako da svaka slika sa tekstom zauzima 4 kolone. -->
+        <div class="row">
+            <div class="col-sm-4 pozadina4" id="Fudbal">
+                <figure>
+                    <img id="slika15" src="../Galerija2/Slika_galerija2/Fudbal.png" alt="Fudbal">
+                    <figcaption>
+                        <h5 class="bold"> Fudbal </h5>
+                        Pa nemam nekog pretjeranog iskustva u fudbalu, jedino što sam igrala za svoju srednju školu na takmičenju Liga Srednjih škola. 4 godine sam na taj način predstavljala svoju školu i 2016.godine smo osvojili drugo mjesto. Ali opet kažem sportski sam duh, pa tako volim svaku disciplinu sporta.
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="col-sm-4 pozadina5" id="Odbojka">
+                <figure>
+                    <img id="slika16" src="../Galerija2/Slika_galerija2/odbojka1.jpg" alt="Odbojka">
+                    <figcaption>
+                        <h5 class="bold"> Odbojka </h5>
+                        Ja sam možda osoba koja kad nešto savlada, nauči i stekne odlično znanje iz toga, prelazi na nešto drugo da nauči i savlada. Pa tako sam prešla da treniram odbojku u odbojkaškom klubu "Vogošća". Igrala sam za kadetsku, juniorsku i ponekad za seniorsku selekciju. Išli na razna takmičenja, putovanja i pripreme. U srednjoj školi sam također nastupala i igrali smo turnir, zvani Gimnazijada, koja se održava svake godine gdje učestvuju sve gimnazije sa područja Kantona Sarajevo. Najčešću poziciju koju sam igrala u odbojci je tehničar, ali znala sam igrati i libera.
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="col-sm-4 pozadina6" id="Skijanje">
+                <figure>
+                    <img id="slika17" src="../Galerija2/Slika_galerija2/skijanje1.jpg" alt="Skijanja">
+                    <figcaption>
+                        <h5 class="bold"> Skijanje </h5>
+                        Kada bih mogla opisati sebe u dvije riječi onda bi to bila sportski duh. Od malena još, pa sve do danas se bavim nekim sportom. Sa nekih 3ipo godine sam naučila plivati i ubrzo nakontoga krećem da učim da skijam. U početku je to prvo bilo sa mojim ocem, a onda nakon nekog perioda sam krenula u školu skijanja. Svoje prve poteze skijanja napravila sam na našoj Olimpijskoj planini Igman
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <hr class="linija">
+
+        <!-- Ovaj dio je vezan za moj video koji prikazuje mene kako skijam na planini. Ovdje vidimo da se prva i posljednji dio
+        reda od 3 kolone nalazi u divovima koji su prazni. 
+        To nam služi da bi video jednim dijelom centrirali i odvojili ga od samih ivica.
+        Video zauzima 6 kolona za ekrane od manjih do srednjih.-->
+        <div class="row pozadina7" id="Video">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <div >
+                    <figure>
+                        <video  controls>
+                            <source src="../Galerija2/Slika_galerija2/Skijanje_video.mp4" type="video/mp4">
+                        </video>
+                        <figcaption>
+                            <h5 class="bold"> Snimak skijanja </h5>
+                            Ovaj video prikazuje jedan naš zimski dan na Jahorini gdje sam provela sa prijateljima. Također kroz ovaj video možete vidjeti kako skijam, jer je cilj bio da se snimimo kako skijamo.
+                        </figcaption>
+                    </figure>
+                </div>             
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>       
+
+    <hr class="linija">
+
+    <!-- Ovo je footer koji se nalazi na svakoj stranici, sadrzi povratak na vrh stranice, moj instagram,
+    moj facebook. Instagram i facbook link vode na stranice mog profila. -->
+    <footer>
+        <div class="dno_stranice">
+            <a href="#top"> Povratak </a>
+            <a href="https://www.instagram.com/enaisen/" target="_blank"> Instagram </a>
+            <a href="https://www.facebook.com/enaisen/"target="_blank"> Facebook </a>
+        </div>
+    </footer>   
+</body>
+</html>

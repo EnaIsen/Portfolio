@@ -1,0 +1,248 @@
+<!-- Pri izradi ovog projekta vezano za html i css dokument, kao i bootstrap, koristila sam stranicu W3school
+https://www.w3schools.com/html/
+https://www.w3schools.com/css/
+https://www.w3schools.com/bootstrap/ -->
+
+<!DOCTYPE html> <!-- ovo je instrukcija da se radi o HTML5 kodu -->
+<html>
+<head>
+    <!-- Da bi na stranici imali afrikate. -->
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <!-- Link za povezivanje ovog html dokumenta sa njegovim css-om -->
+    <link rel="stylesheet" href="pocetna.css"> 
+
+    <!-- Svi dole navedeni linkovi koju su vezani za bliblioteke, poput jQuery, Bootstrap, JavaScript i slično tome, su kopirani sa stranice 
+    Također svi ovi linkovi se nalaze na jednoj stranici, i tako su kopirani. 
+    W3school: https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp -->
+
+    <!--Bootstrap biblioteka, koju sam ukljucila da bi kompletna stranica bila responsive . -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery biblioteka -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+    <!-- JavaScript biblioteka, koja omogućava da sve komponente funkcionišu. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Na osnovu ovog linka je napravljena ikonica u tabu pretraživača. Slika je preuzeta sa interneta. 
+    Link za sliku se nalazi ovdje: https://cloud.in-stories.com/pack1/37/highlights-cover1.jpg -->
+    <link rel="icon" type="image" href="../Pocetna/Slike_Pocetna/Ikonica_u_tabu.png">
+
+    <!-- Naslov samog projekta, odnosno naslov svake podstranice na mojoj stranici. -->
+    <title> Početna stranica </title> 
+</head>
+
+<body>
+    <header> 
+        <!-- Dio koji predstavlja klasu koja mi je potrebna za horizontalni meni, da bi u CSS-u napravila sami izgled
+        tog menija. Prilagodila slova, linkove i mnoge druge stvari.-->
+        <div class="horizontalni_meni" id="top">
+
+        <!-- Također, dio sa mojom slikom, sa transperentnom pozadinom koja omogućava kada god kliknemo na nju da se vrati na moju početnu 
+        stranicu. Transparentnu sliku sam napravila pomoću ove stranice. Njen link: https://www.remove.bg/upload -->
+        <a href="../Pocetna/pocetna.html"> <img  id="slika" src="../Pocetna/Slike_Pocetna/Transparentna_slika.png" alt="Transparentna slika"> </a> 
+
+        <!-- Dio koji predstavlja navigacijski bar koji je isti za svaku podstranicu. -->
+        <!-- Također, one su međusobno povezane. -->
+        <a href="../Pocetna/pocetna.html"> Početna stranica </a>
+        <a href="../Blog1/blog1.html"> Web Design </a>
+        <a href="../Blog2/blog2.html"> Adobe Photoshop </a>
+        <a href="../Galerija1/galerija1.html"> Galerija 1 </a>
+        <a href="../Galerija2/galerija2.html"> Galerija 2 </a> 
+        </div> 
+    </header>
+
+    <hr class="linija">
+    
+    <!-- U ovom dijelu sam napravila neki vid dobrodošlice, odnosno uvod na moju stranicu i mali note vezan za projekat. 
+    Ovaj dio zauzima zauzima 12 kolona, odnosno čitav red. -->
+    <main>
+        <div class="container">
+            <div class="row uvod">
+                <div class="col-sm-12">
+                    <section>
+                        <h1 class="bold"> DOBRO DOŠLI U MOJ PORTFOLIO ! </h1>
+                        <aside>
+                            Ovo je moj prvi projekat iz Web Programiranja I. Prvi veliki dodir sa HTML-om, CSS-om, kao i Bootstrap-om
+                        </aside>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Horizontalna linija da odvojim cjeline. -->
+    <hr class="linija">
+
+    <!-- Dio koji predstavlja vertikalni meni na samoj početnoj stranici. Svaki dio početne stranice je povezan sa vertikalnim menijem. 
+    Dio sa vertikalnim menijem kada je ekran od manjeg zauzima 6 kolona, odnosno pola reda. -->
+    <div class="container">
+        <div class="row">
+            <div class="vertikalni_meni col-sm-6">
+                <ul class="sadrzaj">
+            <a href=#Biografija> Biografija </a> <br>
+            <a href=#Maturski_rad> Maturski rad </a> <br>
+            <a href=#Obrazovanje> Obrazovanje i vještine </a><br>
+            <a href=#Projekt1> Prvi projekat </a> <br>
+            <a href=#Projekt2> Drugi projekat </a> <br>
+            <a href=#Forma> Kontakt </a> <br>
+                </ul>
+
+            <!-- Horizontalna linija predstavlja da odvojimo cjeline, u ovom slučaju vertikalni meni i sliku.
+            Također dio sa slikom zauzima 6 kolona, odnosno pola reda. -->    
+            <hr class="linija">
+            <div class="row">
+            <div class="slika col-6">
+            <img id="slika1" src="../Pocetna/Slike_Pocetna/Moja slika.jpg" alt="Moja slika">
+            </div>
+        </div>
+
+            <!-- Ovdje se nalaze neki moji osnovni podaci koje ste tražili da se navedu, kao što je E-Mail, Instagram
+            broj telefona i slično. Dio sa podacima zauzima 12 kolona. -->
+            <div class="row">
+            <div class="col-12 podaci">
+                <p><span> INSTAGRAM: </span> @enaisen </p>
+                <p><span> E-MAIL: </span> enaisen@gmail.com </p>
+                <p><span> BROJ TELEFONA: </span> +387 62 694250 </p>
+                <p><span> GODINE: </span> 21 </p>
+            </div>
+            </div>
+            </div>
+
+            <!-- U ostatku reda se nalazi tekst, odnosno dio moje biografije. -->
+            <div class="biografija col-sm-6" id="Biografija">
+                <h1 class="bold"> Biografija </h1>
+                <p> Zovem se Ena Isen, rođena sam 25.02.2000.godine u Sarajevu. Studentica sam prve godine na Prirodno-Matematičkom fakultetu, smjer Informacione tehnologije. Završila sam Drugu gimnaziju Sarajevo IB, odnosno pohađala sam internacionalni smijer. Živim sa svojom porodicom u naselju Semizovac, gdje sam i završila osnovnu školu, kao odličan đak. Pohađala sam kurseve, od kojih bih izdvojila kurs Engleskog i Njemačkog jezika. Također, aktivan sam član sudijskog udruženja „Udruženja fudbalskih sudija i instruktora Kantona Sarajevo“, odnosno trenutno sam fudbalski sudija, gdje sam često bila prisutna na raznim seminarima, koji su vezani za moj trenutni hobi, a to je fudbalsko suđenje. Kroz osnovnu, a i srednju školu sam također išla na kreativne radionice te sam obavljala društveno koristan rad. Volontirala sam na raznoraznim Bazarima, koji su se održavali u našoj zemlji, učestvovala u humanitarnim akcijama. Bila sam angažovana pri prikupljanju novčanih sredstava te učestvovala u podizanju svjesti o zagađenju naše Domovine. Kao volonter sam radila u udrženju „Zlatni Kist“, koje se bavi izradom ručnih radova, odnosno tehnikom dekupaž. Inače sam jako kreativna, ambicionza, pozitivna osoba, koja se trudi da iste osobine prenese drugima. U slobodno vrijeme bavim se izradom ručnih radova, tehnikom dekupaž, što je oslikavanje, farbanje i uređivanje drvenih površina po želji, izradom nakita, slikanjem na platnu sa akrilnim bojama. Što se tiče stranih jezika, poznajem i govorim Engleski i Njemački za koje sam i navela pohađani kurs. Kada se radi o znanju na računaru, poznajem sve MS Office programe i programske jezike kao što je C++ te sam radila i u programu WIX.com za kreiranje Web stranice po šablonu. Također sam bazu podataka pravila kroz Microstof Access. Spomenuti ću i to da sam uvijek bila sportski aktivna, gdje se kao sportovi izdvajaju plivanje, odbojka i fudbal. Svoje sadašnje opredjeljenje odnosno fakultet izabrala sam na osnovu svoje velike želje u segmentu IT sektora. Web developer kao i design su tako reći moja prva ljubav, te odmah iza njih dolazi baza podataka. Još jedan od razloga zašto ipak IT jeste moj izbor da je to budućnost cijelog svijeta i da kroz IT sektor mogu prenijeti svoju kreativnost, ambiciju, pozitivnost, kao osobine, koje kod sebe izdvajam. Naravno ne smijemo zaboraviti i to da je danas IT sektor veoma profitabilan i najbrže rastuće zanimanje u svijetu, kao što je i najveća potražnja. </p>
+            </div>
+        </div>
+
+        <hr class="linija">
+
+        <!-- Kao što vidimo ima klasu "col" koja sadrži 8 kolona za ekrane od srednjeg. 
+        Također u ovom dijelu sam izdvojila osnovne podatke kao što je ime mentorice, adresu srednje škole, lokacija i link. 
+        Ovaj dio nas upućuje na opis maturskog rada, temu i šta sam obrađivala u tom radu. -->
+        <div class="row matclass">
+            <div class="col-md-8 maturski" id="Maturski_rad">
+                <h1 class="bold"> Maturski rad </h1>
+                <p> Maturski rad koji sam radila u završnom razredu srednje škole je bio iz predmeta bosanski/hrvatski/srpski jezik i književnost. Obrađivala sam djelo, odnosno roman „Skretnice“ kojeg je napisala Jasmina Musabegović. Sama tema mog rada je bila „U kojoj mjeri su ratna zbivanja doprinjela promjeni slike društva u romanu „Skretnice“ Jasmine Musabegović“. Spisateljica je kroz ovaj roman i kroz opise rata predstavljala je glavne skretnice ili putokaze za jedno razdoblje života. Ovo djelo je prvenstveno porodična priča. Glavna junakinja je Fatima, majka i žena, koja svom snagom radi da bi svoju porodicu održala na okupu, koja je izložena raznim iskušenjima društvenih i historijskih preobražaja i potresa. Predstavljena je kao lik koji uvijek u svakoj mogućoj situaciji upečatljiv i samouvjeren. U djelu je predstavljen izgled društva, glavne junakinje i njenog muža, njihovi životi i njihova ponašanja, razmišljanja i stav prema ljudima. Preispituju ljudsku mogućnost da upozna bolje sebe i da dođe do sopstva, odnosno da sebe pronađe kao pojedinačno biće i da na taj način shvati gdje pripada u društvu. Radnja ovog romana se odvija u periodu između dva svjetska rata, odnosno u periodu pred Drugi svjetski rat. Rat je proizvod zla koji se nalazi u čovjeku, kasnije ga prevaziđe i onda ga uništi. On je dat likovima kao prepreka ka životnom ostvarenju, a zatim kao iskušenje, gdje dolazi do lične preobrazbe rezultirajući sukobom sa samim sobom. Analiza ovog eseja će obuhvatiti sliku društva prije, tokom i poslije rata. Također, sam obrađivala samu historijsku pozadinu, cjelokupno stanje i radnju romana, da bih kasnije mogla analizirati same uloge muškarca i žene u tom periodu i napraviti neku analizu, odnosno dati neku vrstu poređenja u ulogama između muškarca i žene današnjice i za vrijeme rata. </p>
+                <p class="podaci1"><span> IME MENTORICE: </span> Nermana Imamović </p>
+                <p class="podaci1"><span> ADRESA: </span> Sutjeska 1, 71000 Sarajevo </p>
+                <p class="podaci1"><span> LOKACIJA: </span> Sarajevo </p>
+                <p class="podaci1"><span> LINK: </span></p> <a class="boja" href="https://2gimnazija.edu.ba/bs/" target="_blank"> Druga gimnazija Sarajevo </a>
+            </div>
+
+            <!-- Dio sa slikom zauzima 4 kolone za ekrane od srednjeg. Slika je preuzeta sa interneta.
+            Link za sliku se nalazi ovdje: https://www.sarajevopublishing.ba/media/image/31/original/60022.jpg -->
+            <div class="col-md-4 maturska_slika">
+                <img id="maturska_slika" src="../Pocetna/Slike_Pocetna/Maturski_rad.jpg" alt="Naslovna stranica knjige">
+            </div>
+        </div>
+
+        <hr class="linija">
+
+        <!-- Dio sa slikom koji zauzima 4 kolone za ekrane od srednjeg, tako da će se slika prilagođavati. -->
+        <div class="row obra">
+            <div class="col-md-4 obrazovanje_slika" id="Obrazovanje">
+                <img id="dekupaž" src="../Pocetna/Slike_Pocetna/Obrazovanje.jpg" alt="Dekupaž tehnika">
+            </div>
+
+            <!-- Kao što vidimo ovdje ovaj dio sam podijelila da zauzima 8 kolona za ekrane od srednjeg. 
+            Ovaj dio upućuje na moje same vještine i dosadašnje obrazovanje koje sam završila, moji dodatni hobiji i zanimacije. -->
+            <div class="col-md-8 obrazovanje">
+                <h1 class="bold"> Obrazovanje i vještine </h1>
+                <p> Dakle, završila sam osnovnu školu u mjestu gdje sam i odrasla i gdje trenutno živim. Potom sam pohađala Drugu gimnaziju Sarajevo IB. Kroz samo obrazovanje stekla sam razne vještine, jer nam obrazovanje ne daje samo znanje iz različitih nauka, već i priliku da steknemo iskustvo u onome što nas interesuje. Tako sebe gradimo kao ličnost i stičemo potrebne vještine kako bismo bili sposobni da obavljamo razne poslove, ali ujedno i dajemo svoj doprinos za druge ljude i činimo svijet mnogo boljim. Kada su u pitanju moje vještine koje sam stekla kroz obrazovanje su, da sam unaprijedila svoje znanje u oblasti Informatike, što se tiče MS Offica od jednostavnijih ka težim stvarima. Također, kroz obrazovanje sam shvatila koja me oblast zanima, kada je u pitanju IT sektora, a to je Web Developing i Desing. Imam iskustva u C++ jer sam u tom programskom jeziku stekla znanje kroz srednju školu. Kada je riječ o mojim soft-vještina jako sam komunikativna, pozitivna, ambiciozna, volim raditi u grupama, odnosno timski sam igač. Kada govorimo o formalnim postignućima za vrijeme obrazovanja je taj da sam u osnovnoj školi išla na takmičenja iz Bosanskog/Hrvatskog/Srpskog jezika i književnosti i osvojila prvo mjesto na Kantonalnom takmičenju. U srednjoj i nisam baš postizala neke rezultate jer nisam išla na takmičenja iz nauka, ali sam išla u raznim sportovima. Sa srednjom školom u ženskom fudbalu sam osvojila 2 mjesto 2017.godine na takmičenju zvanom Liga Srednjih škola, a u odbojci samo osvojili 4 mjesto na takmičenju zvana Gimnazijada. Već sam i ranije navela da sam išla na kurs Engleskog i Njemačkog jezika i imam certifikate za svaki položen stepen. Ali, također sam išla na razna takmičenja u odbojci, plesu, crtanju kroz razne fondacije i projekte gdje smo također postizali odlične rezultate. Usavršila sam tehniku dekupaž gdje svu svoju kreativnost i energiju prenosim na drvenaste, pločaste materijale. Volim da radim i da učim i da stičem nova prijateljstva, vještine, iskustva, pa sam se i zbog toga prijavljivala na razne projekte da budem volonter, kao što je Zimski Diplomatski Bazar, radila raznorazne humanitarne akcije i radila radionice sa djecom sa posebnim potrebama i redovno posjećivala dječiji dom na Bjelavama. Također, stekla sam zvanje fudbalskog sudije i time se bavim još od 2017 godine. </p>
+            </div>
+        </div>
+
+        <hr class="linija">
+
+        <!-- Dolazimo do dijela na stranici koji je vezan za projekte, zauzimaju 8 kolona za ekrane od srednjeg.
+        Ovaj dio je vezan za prvi projekat i njegov opis i svrha samog projekta, jer sam učestvovala na razmjeni učenika
+        koji je veoma važan projekat i jedno nezaboravno iskustvo. -->
+        <div class="row proj1">
+            <div class="col-md-8 projekti" id="Projekt1">
+                <h1 class="bold"> Prvi projekat </h1>
+                <h3> Razmjena u Njemačkoj </h3>
+                <p> Prije nego što sam završila srednju školu, prijavila sam se da učestvujem u razmjeni srednjoškolaca u Njemačku. Prvenstveno razmjena je trajala po 7 dana, odnosno srednjoškolci su dolazi kod nas na 7 dana, imali smo osmišljen program za njih koji smo napravili s našim profesoricama iz srednje škole. Svako od nas je imao jednog/jednu Njemca/Njemicu koji su spavali u našim domovima. Dakle, naš program je bio da s njima obilazimo glavni grad Bosne i Hercegovine, Sarajevo, da upoznaju i vide ljepote koje naša Domovina nama pruža. Također, s njima smo išli i na jednodnevne izlete kao što je obilazak Mostara, Bune, vožnja žičarom i šetnjom po našim Olimpisjkim planinama, obilasci značajnih zgrada, vjerskih ustanova i ostalih značajnih građevina koje utiču na našu ljepotu, arhitekturu i koje su veoma značajne iz naše prošlosti. Ali isto tako pored lijepog druženja s njima, sticanju novih prijateljstava mi smo ih isto upoznavali sa našim edukacijskim sistemom, odnosno išlu su s nama u školu. Nakon nekoliko mjeseci, mi odlazimo njima u Njemačku u grad/selo Eschach blizu većeg grada Stuttgart-a. Eschach je maleni gradić/selo u kojem se svi znaju, gdje se ljudi bave poljoprivredom i žive jako miran i skladan život. Upoznali smo njihov edukacijski sistem, odnosno išli smo s njima u školu i također učestvovali s njima u raznoraznim zadacima koje smo trebali ispuniti za taj čas. Kroz grad su nam također organizovali igrice u grupama, da pratimo upute da bi mogli odraditi zadatke koje su nam zadali, odgovoriti na neka pitanja i bolje upoznati grad ili mjesta koja smo posjetili. Kao što smo išli kod nas na jednodnevne izlete, išli smo i s njima, naravno u obilazak Stuttgarta, Frankfurta, Munich, Heidelberg, koji je jednostavno najposebnijih od svih gradova koje smo posjetili. Također smo posjetili jedan od većih zoloških vrtova, koji se sastoji od velikog botaničkog vrta, morskog i kopnenog svijeta, ali je sve tako usklađeno i organizovano, da se može opisati samo jednom riječju BAJKA.  </p>
+            </div>
+
+            <!-- Dio sa slikom zauzima 4 kolone za ekrane od srednjeg. Da bi se sve bilo ljepše. -->
+            <div class="col-md-4 prvi_projekat_slika">
+                <img id="prvi_projekat_sl" src="../Pocetna/Slike_Pocetna/Razmjena_u_Njemacku.jpg" alt="Razmjena u Njemačkoj">
+            </div>
+        </div>
+
+        <hr class="linija">
+
+        <!-- Slika zauzima 4 kolone od srednjeg ekrana. -->
+        <div class="row proj2">
+            <div class="col-md-4 drugi_projekat_sl" id="Projekt2">
+                <img id="drugi_projekat_sl" src="../Pocetna/Slike_Pocetna/Djeciji_dom_Bjelave.jpg" alt="Dječiji dom Bjelave">
+            </div>
+
+            <!-- Ovdje je opisan drugi projekat kojeg sam radila u sklopu škole, organizovala radionicu sa djecom iz doma kao vid humanirane
+            akcije gdje sam također prikupljala posebna sredstva za njih. -->
+            <div class="col-md-8 projekti2">
+                <h1 class="bold"> Drugi projekat </h1>
+                <h3> Radionica u dječijem Domu na Bjelavama </h3>
+                <p> Kada je riječ o radionicama, humanitarnim akcijama, raznoraznim projektima koji su korisni za nas i našu okolinu poučena sam raznim iskustvima i znanjem, jer smo imali „predmet“ u srednjoj školi koji se zove društveno korisni rad. To je bilo kod nas obavezno, jer smo morali da ispunjavamo svoje dužnosti koje su korisne za svakog. Tako da sam ja izabrala meni jedan od najdražih i najuspješnijih projekata koje sam obavila krajem 2016.godine. Sa određenim prijatelja iz razreda sam se odlučila da za ovaj projekat, usrećimo određenu grupu djece, koja borave u domu za nezbrinutu djecu na Bjelavama. Moram naglasiti da kroz sve ove projekte mi nismo mogli sami donirati određena sredstva, već smo morali da nađemo način, kako prikupiti novčana sredstva da bi dječici objezbjedili ono što smo zamislili. Nadležnim osobama se mnogo svidjela naša ideja i bili su oduševljeni da mladi ljudi žele da podignu svijest o djeci koja su ostavljena. Na Bazaru smo prikupili jaku finu svotu novca i sa istim novčanim sredstvima smo kupili sav potreban materijal za našu radionice koje trebamo da obavimo s djecom. Tema nam je bila Zima i Novogodišnja atmosfera. Isto tako nismo otišli praznih ruku, samo da bi im održali radionicu, igrali se, družili s njima, već smo osmislili, pripremili paketiće. Pooslije završetka radionice, svako dijete koje je učestvovalo u radionici, pa čak i koje nije, je na kraju dobilo paketić. Riječima ne mogu opisati svoje emocijei tog dana. Djeca su željna nekih novih stvari, pažnje, ljubavi. Svrha ovog projekta i jeste bila ispuniti neku našu dužnost prema toj djeci, jer svi smo podjednaki i zaslužujemo isto. Izmamiti dječici osmijeh na lice, pružiti im malo pažnje, sreće i ljubavi je nešto neprocijenjivo. </p>
+            </div>
+        </div>
+
+        <hr class="linija">
+
+        <!-- Ovaj dio ovdje je napravljen za formu koja se tražila. Forma zauzima 12 kolona od srednjeg ekrana. 
+        Forma sadrži da korisnik unese svoje ime, prezime, e-mail, naslov same poruke i sadržaj te poruke, a ujedno ima
+        i dugmić da bi se forma poslala, koji nije baš funkcionalan jer za to treba JavaScript koja još nije rađena. -->
+        
+            <div class="row forma">
+                <div class="col-md-12 forma1" id="Forma">
+                    <form metod="post" action="">
+                        <fieldset>
+                            <h1 class="bold"> Kontakt </h1>
+                            <p class="ime">
+                                <label for="ime"> Ime: </label>
+                                <input type="text" name="ime" id="ime">
+                            </p> 
+                            <p class="prezime">
+                                <label for="prezime"> Prezime: </label>
+                                <input type="text" name="prezime" id="prezime">
+                            </p>
+                            <p class="email">
+                                <label for="email"> E-Mail: </label>
+                                <input type="text" name="email" id="emial">
+                            </p>
+                            <p class="naslov_poruke">
+                                <label for="naslov_poruke"> Naslov poruke: </label>
+                                <input type="text" name="naslov_poruke" id="naslov_poruke">
+                            </p>
+                            <p class="sadrzaj_poruke">
+                                <label for="sadrzaj_poruke"> Sadržaj poruke: </label>
+                                <textarea name="sadrzaj_poruke" id="sadrzaj_poruke" rows="10" cols="50"></textarea> <br>
+                            </p>
+                            <input class="button" type="submit" value="Submit" id="dugme">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+    </div>   
+
+    <hr class="linija">
+
+    <!-- Ovo je footer koji se nalazi na svakoj stranici, sadrzi povratak na vrh stranice, moj instagram,
+    moj facebook. Instagram i facebook link vode na stranice mog profila. -->
+    <footer>
+        <div class="dno_stranice">
+            <a href="#top"> Povratak </a>
+            <a href="https://www.instagram.com/enaisen/" target="_blank"> Instagram </a>
+            <a href="https://www.facebook.com/enaisen/" target="_blank"> Facebook </a>
+        </div>
+    </footer>  
+</body>
+</html>

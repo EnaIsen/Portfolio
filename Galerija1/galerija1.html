@@ -1,0 +1,190 @@
+<!DOCTYPE html> <!-- ovo je instrukcija da se radi o HTML5 kodu -->
+<html>
+<head>
+    <!-- Da bi na stranici imali afrikate. -->
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <!-- Link za povezivanje ovog html dokumenta sa njegovim css-om -->
+    <link rel="stylesheet" href="galerija1.css"> 
+
+    <!-- Svi dole navedeni linkovi koju su vezani za bliblioteke, poput jQuery, Bootstrap, JavaScript i slično tome, su kopirani sa stranice 
+    W3school: https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp -->
+
+    <!--Bootstrap biblioteka, koju sam ukljucila da bi kompletna stranica bila responsive. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery biblioteka -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+    <!-- JavaScript biblioteka, koja omogućava da sve komponente funkcionišu. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Na osnovu ovog linka je napravljena ikonica u tabu pretraživača. Slika je preuzeta sa interneta. 
+    Link za sliku se nalazi ovdje: https://cloud.in-stories.com/pack1/37/highlights-cover1.jpg -->
+    <link rel="icon" type="image" href="../Pocetna/Slike_Pocetna/Ikonica_u_tabu.png"> 
+
+    <!-- Naslov samog projekta, odnosno naslov svake podstranice na mojoj stranici. -->
+    <title> Galerija 1 - Putovanja </title> 
+</head>
+<body>
+    <header> 
+         <!-- Dio koji predstavlja klasu koja mi je potrebna za horizontalni meni, da bi u CSS-u napravila sami izgled
+        tog menija. Prilagodila slova, linkove i mnoge druge stvari.-->
+        <div class="horizontalni_meni" id="top">
+
+
+        <!-- Također, dio sa mojom slika, sa transparentnom pozadinom koja omogućava kada god kliknemo na nju da se vrati na moju početnu 
+        stranicu. Transparentnu sliku sam napravila pomoću ove stranice. Njen link se nalazi ispod dole u komentaru: 
+        https://www.remove.bg/upload -->
+        <a href="../Pocetna/pocetna.html"> <img  id="slika" src="../Pocetna/Slike_Pocetna/Transparentna_slika.png" alt="Transparentna slika"> </a> 
+
+        <!-- Dio koji predstavlja navigacijski bar koji je isti za svaku podstranicu. -->
+        <!-- Također, one su međusobno povezane. -->
+        <a href="../Pocetna/pocetna.html"> Početna stranica </a>
+        <a href="../Blog1/blog1.html"> Web Design </a>
+        <a href="../Blog2/blog2.html"> Adobe Photoshop </a>
+        <a href="../Galerija1/galerija1.html"> Galerija 1 </a>
+        <a href="../Galerija2/galerija2.html"> Galerija 2  </a> 
+        </div> 
+    </header>
+
+    <!-- Horizontalna linija predstavlja da odvojimo cjeline -->
+    <hr class="linija">
+
+    <div class="container ">
+        <div class="row meni">
+
+            <!-- Dio koji predstavlja vertikalni meni na samoj stranici. Svaki dio stranice je povezan sa vertikalnim menijem. 
+            Dio sa vertikalnim menijem kada je ekran od manjeg ka srednjem zauzima 7 kolona. -->
+            <div class="vertikalni_meni col-sm-7">
+                <ul class="sadrzaj">
+            <a href=#Istanbul> Istanbul </a> <br>
+            <a href=#Ekskurzija> Italija, Francuska, Španija </a> <br>
+            <a href=#Njemačka> Njemačka </a> <br>
+            <a href=#Split> Hrvatska </a> <br>
+            <a href=#Srbija> Srbija </a> <br>
+            <a href="#Video"> Trening </a>
+                </ul>
+            </div>  
+
+            <!-- Slika avion u vertikalnom meniju je preuzeta sa interneta. Link slike se nalazi ispod, ovdje u komentaru: 
+            https://i.pinimg.com/originals/47/67/2a/47672a3c3b6f842854650b964441d8ec.png
+            Također i za ovu sliku sam napravila da bude transparentna, pomoću ove web stranice. Link za tu stranicu se nalazi ovdje ispod:
+            https://www.remove.bg/upload
+            Ovaj dio zauzima 5 kolona. -->
+            <div class="slika4 col-sm-5">
+                <img id="avion" src="../Galerija1/Slike_galerija1/Ikonica_aviona.png" alt="ikonica_aviona">
+            </div>    
+        </div>
+
+        <!-- Horizontalna linija predstavlja da odvojimo cjeline. -->
+        <hr class="linija">
+
+        <!-- Dio u kojem se nalazi moja slika sa putovanja iz Istanbula. Slika zauzima 5 kolona. -->
+        <div class="row ista">
+            <div class="col-sm-5 istanbul_slika" id="Istanbul">
+                <img id="slika5" src="../Galerija1/Slike_galerija1/Istanbul.jpeg" alt="Pogled na Bosfor">
+            </div>
+
+            <!-- Dio u kojem sam opisivala to putovanje. Ovaj dio zauzima po 7 kolona. -->
+            <div class="col-sm-7 istanbul">
+                <h1 class="bold"> Istanbul </h1>
+                <p> Jedno od najdražih i nekako najboljih putovanja koje sam proživjela jeste bas putovanje u Istanbul. U istanbul smo išli sa srednjom školom, kao studijsko putovanje. U tom gradu smo boravili 4 dana i 3 noći, a odletili smo 24.02.2018.godine. Najvažniji razlog zašto je ovo putovanje za mene bilo posebno jeste što sam tamo proslavila svoj 18-i rođendan. Nekako najljepši poklon koji sam mogla da dobije. Također, bilo mi je veoma drago što sam na tom putovanju sa prijateljima iz srednje škole, gdje smo se super proveli i imali odličan plan i program za obilazak ovog predivnog grada. Drago mi je da sam posjetila baš ovaj grad, jer je za mene to bilo nezaboravno iskustvo, gdje sam naučila mnogo o samim Turcima i njohovoj kulturi, hrani, arhitekturi, običajima, a ujedno i vidjela jedan od najljepših gradova u Evropi, po mom mišljenju, naravno. Slika je nastala na mjestu zvanom Topkapi Saraj, koja ima predivan pogled na Bosfor. Samo ću reći još da je Topkapi Saraj bila glavno prebivalište osmanskih sultana. </p>
+            </div>
+        </div>
+
+        <hr class="linija">
+
+        <!-- Dio u kojem sam opisivala moje putovanje kroz Italiju, Španiju i Francusku. Ovaj dio teksta zauzima 7 kolona. -->
+        <div class="row eks">
+            <div class="col-sm-7 ekskurzija" id="Ekskurzija">
+                <h1 class="bold"> Italija, Francuska, Španija </h1>
+                <p> Svaka srednja škola organizuje ekskurziju za učenike trećih razreda.Tako, da se moja desila početkom mjeseca maja, 2018.godine. Naša destinacija je bila prvo noćenje u Francuskoj, u gradu Cannes. Iako smo stigli naveče kasno u taj grad, mogu reći da me jako oduševilo noćnje izdanje tog grada. Sve je nekako usklađeno, uređeno, baš onako kako sam ga zamišljala. U ranim jutarnjim satima nastavili smo našu avanturu prema Barceloni, ali prvo smo imali Panoramsku vožnju gdje smo obilazili još jedan grad u Francuskoj, Nice koji je prelijep grad uz obalu, gdje smo prošetali, slikali se i naučili razne zanimljivosti o ovom gradu. Zatim, iz Nice krećemo prema Monacu, gdje smo imali priliku vidjeti stazu Formule1 i penjati se i obići razne građevine koje su specifične za ovaj grad. Poslije toga, krećemo za Barselonu, u grad Lloret de mar. Imali smo razne obilaske, izlete i fakultative. Išli smo u obilazak Barcelone i posjetili stadion Camp Nou, otišli smo u Aqua Park, obilazili ogroman Akvarijum i još mnogo toga zanimljivog. Iz Barselone, krećemo za Italiju, ali kao jedan vid krstarenja, odnosno putovali smo Kruzerom. Što je ja mislim za svakog učenika bilo jako nezaboravno, jer smo proveli jako zanimljivu noć putujući Kruzerom, bili na palubi, gledali zalazak i izlazak sunca i imali fenomenalan pogled. Kruzerom smo stigli u Rim i u kasnim satima smo posjetili Koloseum i odputovali u hotel, gdje smo prenoćili i ujutro nastavili put ka Bosni i Hercegovini.  </p>
+            </div>
+
+            <!-- Dio u kojem se nalazi moja slika sa putovanja iz Italije, Francuske i Španije. Slika zauzima 5 kolona. -->
+            <div class="col-sm-5 ekskurzija_slika">
+                <img id="slika6" src="../Galerija1/Slike_galerija1/Eksurzija_slika.jpg" alt="Ekskurzija">
+            </div>
+        </div>
+
+        <hr class="linija">
+
+        <!-- Dio u kojem se nalazi moja slika sa putovanja iz Njemačke. -->
+        <div class="row njem">
+            <div class="col-sm-5" id="Njemačka">
+                <img id="slika7" src="../Galerija1/Slike_galerija1/Njemacka.jpg" alt="Zološki vrt u Njemackoj">
+            </div>
+
+            <!-- Dio u kojem sam opisivala moje putovanje kroz Njemačku. -->
+            <div class="col sm-7 njemačka">
+                <h1 class="bold"> Njemačka </h1>
+                <p> Veliki sam ljubitel životinja i od malena sam maštala da budem "doktor za životinje", odnosno veterinar, ali ipak život je ima neki drugi plan za mene i odveo me na sasvim drugu oblast, zanimanje čime ću se baviti do kraja svog života. Ipak, ljubav prema životinjama nije nestala i nikad neće nestati. Putovanja za mene predstavljaju za mene jednu veliku avanturu, stvaranje jako lijepih uspomena i nekako ispunjenje moji želja da obiđem svaku državu a svijetu. Kada god idem na neko putovanje, u neki gradić nekako mi je na prvom mjestu da posjetim zološki vrt tog grada. Svaki mi je poseban na svoj način i svaki budi nešto u meni što se ne može opisati. Na slici se nalazim u zološkom vrtu koji se zove "Wilhelma" u Stutgartu koji je također i botanički. Veoma uređen zološki i jako lijepo organizovan, gdje je svaki metar vrta lijepo uređen. Mogu reći da životinje imaju punu slobodu i jako ih je lijepo vidjeti. Razni program je osmišljen i puno manjih prodavnica vezano za suvenire i sami dio tog zološkog vrta. Mogu reći da je ovo jedna od najljepših posjeta zološkom vrtu, koji je veoma poseban za mene, a pogotovo pingvini. Tako su razigrani, umiljati jer su čak prilazili ljudima i bili su veoma blizu. </p>
+            </div>
+        </div>
+
+        <hr class="linija">
+
+        <!-- Dio u kojem sam opisivala moje putovanje u Hrvatsku. -->
+        <div class="row hr">
+            <div class="col-sm-7 " id="Split">
+                <h1 class="bold"> Hrvatska </h1>
+                <p> Put na jedan dan je nešto što je za mene predivno i uzbudljivo. Pred samu pandemiju COVID-19, dobila sam poziv od tetke da odemo na jedan dan u Split zbog njenih obaveza koje možda traju najviše jedan sat. Naravno, pristala sam, zašto da ne. Što se tiče same vožnje, putovale smo odlično, kada smo željele nešto da jedemo, popijemo ili odmorimo od vožnje, stale smo i cijeli put smo razgovarale o raznim temama. Vrijeme je bilo predivno. Dok je ona završavala svoje obaveze, ja sam uživala na Splitskoj Rivi, ispijajući kafu i upijajući D vitamin, iako je bilo već kraj mjeseca Februara. Poslije njenih završenih obaveza, skupa smo uživale u šetnji, također obavile shopping, ručale i imale neku vrstu ponovnog zbližavanja, jer prije toga tetka je bila u Americi na 6 mjeseci. Jedno predivno iskustvo i kvalitetno potrošeno vrijeme. Također, kada god neko spomene grad Split budi u meni neka posebna osjećanja, jer sam jednim dijelom odrasla u Splitu, ako tako to mogu da kažem. Imam mnogo prijatelja dole s kojim volim da provodim vrijeme i uživam s njima. Minimalno dva puta godišnje posjećujem Split. Također, moa porodica ima dole jako dobre prijatelje kod kojih boravimo i uvijek smo dobrodošli. Tako da, samo ovaj izlet na jedan dan je ostao duboko urezan u meni. Prvenstveno jer sam išla sa tetkom i imale jednu vrstu zbližavanja i uživanja, a druga stvar zbog toga što sam posjetila svoj drugi dom.  </p>
+            </div>
+
+            <!-- Dio u kojem se nalazi moja slika sa putovanja iz Hrvatske. -->
+            <div class="col-sm-5  crna_gora_slika">
+                <img id="slika8" src="../Galerija1/Slike_galerija1/Split_3.png" alt="Izlet u Split">
+            </div>
+        </div>
+
+        <hr class="linija">
+
+        <!-- Dio u kojem se nalazi moja slika sa putovanja iz Srbije. -->
+        <div class="row srb">
+            <div class="col-sm-5 srbija_slika" id="Srbija">
+                <img id="slika9" src="../Galerija1/Slike_galerija1/srbija_zoloski.jpg" alt="Zološki u Srbiji">
+            </div>
+
+            <!-- Dio u kojem sam opisivala moje putovanje iz Srbije. -->
+            <div class="col-sm-7 ">
+                <h1 class="bold"> Srbija </h1>
+                <p> Posjeta glavnom gradu Srbije, Beogradu je bila isplanirana. Prvenstvena posjeta samom Beogradu, ali i Novom Sadu je bila zbog vakcine protiv COVID-19. Pošto u tom periodu nismo mogli da se vakcinišemo u Bosni i Hercegovini, sa porodicom sam odlučila da to uradimo u Srbiji, a ujedno i da odemo na produženi porodični vikend. Tako da i ovog puta, kao i svaki do sad kada idemo u poesjetu nekog grada, prva postaja je obilazak zološkog vrta. Dosta veliki zološki vrt, sa raznim animacijama, programima, uređenjima i ujedno jako zanimljivim sadržajem, odnosno životinjama. Sve je tako nekako organizovano i uređeno, ali isto i povezano. Kroz razne putove i načine možete dospjeti do svakog dijela zološkog vrta i skoro svaku životinju na svijetu koja postoji možete je vidjeti u ovom zološkom vrtu. U suštini Beograd je jako lijep grad, ali ipak najljepša sjećanja koja me vežu jeste posjeta zološkom vrtu. </p>
+            </div>
+        </div>
+
+        <hr class="linija">
+
+        <!-- Ovaj dio prikazuje jedan moj video, gdje sam predstavila jedan moj trening dok sam trenirala odbojku.
+        Ovaj video zauzima 12 kolona.-->
+        <div class="row video">
+            <div class="col-sm-12" id="Video">
+                <h1 class="bold"> Trening </h1>
+                <p class="sredina"> Ovaj video predstavlja jedan naš ljetni trening na pijesku, dok sam trenirala odbojku, čak mogu reći da je ovo vid nekih naših priprema jer smo svake godine učestvovali na turniru "Odbojka na pijesku. </p>
+                <div>
+                    <video controls >
+                        <source src="../Galerija1/Slike_galerija1/Ena_video_2.mp4" type="video/mp4">
+                        </video>
+                </div>   
+            </div>
+        </div>
+    </div>
+
+    <hr class="linija">
+
+    <!-- Ovo je footer koji se nalazi na svakoj stranici, sadrzi povratak na vrh stranice, moj instagram,
+    moj facebook. Instagram i facbook link vode na stranice mog profila. -->
+    <footer>
+        <div class="dno_stranice">
+            <a href="#top"> Povratak </a>
+            <a href="https://www.instagram.com/enaisen/" target="_blank"> Instagram </a>
+            <a href="https://www.facebook.com/enaisen/" target="_blank"> Facebook </a>
+        </div>
+    </footer>  
+</body>
+</html>

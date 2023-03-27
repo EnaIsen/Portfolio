@@ -1,0 +1,208 @@
+<!DOCTYPE html> <!-- ovo je instrukcija da se radi o HTML5 kodu -->
+<html>
+<head>
+    <!-- Da bi na stranici imali afrikate. -->
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <!-- Link za povezivanje ovog html dokumenta sa njegovim css-om -->
+    <link rel="stylesheet" href="blog2.css"> 
+
+    <!-- Svi dole navedeni linkovi koju su vezani za bliblioteke, poput jQuery, Bootstrap, JavaScript i slično tome, su kopirani sa stranice 
+    W3school: https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp -->
+
+    <!--Bootstrap biblioteka, koju sam ukljucila da bi kompletna stranica bila responsive. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery biblioteka -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+    <!-- JavaScript biblioteka, koja omogućava da sve komponente funcionišu. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Na osnovu ovog linka je napravljena ikonica u tabu pretraživača. Slika je preuzeta sa interneta. 
+    Link za sliku se nalazi ovdje: https://cloud.in-stories.com/pack1/37/highlights-cover1.jpg -->
+    <link rel="icon" type="image" href="../Pocetna/Slike_Pocetna/Ikonica_u_tabu.png"> 
+
+    <!-- Naslov samog projekta, odnosno naslov svake podstranice na mojoj stranici. -->
+    <title> Blog 2 - Adobe Photoshop  </title> 
+</head>
+<body>
+    <header> 
+         <!-- Dio koji predstavlja klasu koja mi je potrebna za horizontalni meni, da bi u CSS-u napravila sami izgled
+        tog menija. Prilagodila slova, linkove i mnoge druge stvari.-->
+        <div class="horizontalni_meni" id="top">
+
+        <!-- Također, dio sa mojom slika, sa transperentnom pozadinom koja omogućava kada god kliknemo na nju da se vrati na moju početnu 
+        stranicu. Transparentnu sliku sam napravila pomoću ove stranice. Njen link: https://www.remove.bg/upload -->
+        <a href="../Pocetna/pocetna.html"> <img  id="slika" src="../Pocetna/Slike_Pocetna/Transparentna_slika.png" alt="Transparentna slika"> </a> 
+
+        <!-- Dio koji predstavlja navigacijski bar koji je isti za svaku podstranicu. -->
+        <!-- Također, one su međusobno povezane. -->
+        <a href="../Pocetna/pocetna.html"> Početna stranica </a>
+        <a href="../Blog1/blog1.html"> Web Design </a>
+        <a href="../Blog2/blog2.html"> Adobe Photoshop </a>
+        <a href="../Galerija1/galerija1.html"> Galerija 1 </a>
+        <a href="../Galerija2/galerija2.html"> Galerija 2 </a> 
+    </header>
+
+    <!-- Horizontalna linija predstavlja da odvojimo cjeline -->
+    <hr class="linija">
+    
+    <!-- Dio u kojem sam pisala općenito šta je Photoshop, odnosno to je moja druga tema za blog. Ovaj dio zauzima 7 kolona, 
+    nešto malo više od pola tog reda u kojem se nalazi, dok ostalo zauzima 5 kolona
+    tog reda. Slika je preuzeta sa interneta, svi linkovi vezani za literaturu i slike se nalaze na dnu same stranice.
+    Sliku sam također napravila da bude transparentna i to sam uradila pomoću ove stranice. Njen link je: 
+    https://www.remove.bg/upload -->
+    <div class="container ">
+        <div class="row">
+            <div class="photoshop col-sm-7" id="Photoshop">
+                <h1 class="bold"> ADOBE PHOTOSHOP </h1>
+                <h3 class="bold"> Šta je adobe photoshop? </h3>
+                <p> Adobe Photoshop je softverski program, najpopularniji program današnjie, i koristi se za uređivanje slika, kao i samog grafičkog dizajna. Kada koristimo ovaj program za uređivanje slika, to uređivanje se vrši u slojevima i kroz silne te slojeve on dozvoljava uređivanje. Također ti slojevi omogućavaju korisniku da upotrebi razne efekte, mijenja boju, sjene i mnoge druge stvari koje sadrži da bi korisnik dobio ono što želi.  </p>
+                <img id="slika4" src="../Blog2/Slike_blog2/Photoshop2.png" alt="Photoshop">
+            </div>
+
+            <!-- Dio koji predstavlja vertikalni meni na samoj početnoj stranici. Svaki dio početne stranice je povezan sa vertikalnim menijem. 
+            Dio sa vertikalnim menijem zauzima 5 kolona. -->
+                <div class="vertikalni_meni col-sm-5">
+                    <ul class="sadrzaj">
+                        <a href=#Photoshop> Šta je adobe photoshop? </a> <br>
+                        <a href=#Razvoj> Razvoj photoshop-a </a> <br>
+                        <a href=#Datoteke> Datoteke photoshop-a </a> <br>
+                        <a href=#Verzija> Verzija photshop-a </a> <br>
+                        <a href=#Alati> Alati photoshop-a </a> <br>
+                        <a href=#Historija> Historija photoshop-a </a> <br>
+                        <a href=#Literatura> Literatura </a>
+                    </ul>
+                </div>
+        </div>
+
+        <hr class="linija">
+
+        <!-- Dio u kojem sam pisala o samom razvoju Photoshopa. Ovaj dio zauzima 5 kolona tog reda u kojem je smješten
+         i u njemu su smješteni i tekst i slika. -->
+        <div class="row">
+            <div class="razvoj col-sm-5" id="Razvoj">
+                <article>
+                    <h3 class="bold"> Razvoj photoshop-a </h3>
+                    <p> Program Adobe Photoshop je kreiran davne 1987.godine od strane dva brata, Thomas i John Knoll. Prvi je Thomas koji je kreirao program koji se zove Macintosh Plus sa ciljem da ima vrlo jednostavan zadatak, a taj zadatak je bio da prikaže sliku na ekranu, ali u crno-bijeloj boji, koja ima neke sivkaste podtonove.  </p>
+                    <p> Nekoliko godina kasnije, 1990.godine izlazi prva verzija Photoshop-a 1.0. Kao i u svakom programu i sa ostalom tehnologijom, svaka nova verzija Photoshop-a je bila nadograđivana i imala je svaki put sve bolje i bolje mogućnosti za uređivanje i samu upotrebu programa.  </p>
+                    <img id="razvoj" src="../Blog2/Slike_blog2/thomas_john_knol.jpg" alt="Thomas_i_John_Knol">
+                </article>
+            </div>
+
+            <!-- Dio u kojem sam pisala o samim datotekama Photoshopa. Ovaj dio zauzima 7 kolona tog reda u kojem je smješten,
+            također smještena je i slika i tekst u njemu. -->
+            <div class="datoteke col-sm-7" id="Datoteke">
+                <article>
+                    <h3 class="bold"> Datoteke photoshop-a </h3>
+                    <p> Program photoshop ima svoju zadanu datoteku. Jedna od njegovih datoteka je PSD datoteka. Cilj ove datoteke je da prikuplja slike koje se mogu ubaciti da budu u Photoshop-u, kao što obuhvata prozirnost, boje, tekst i druge stvari. Datoteka poput JPG ili GIF datoteka spriječavaju njen sadržaj i tako smanjuju funkcionalnost. PSD datoteke imaju maksimalnu visini i širinu od 30.000 piksela i dužinu od 2GB. Ove čak datoteke imaju nekad nastavak PSB koja ima funkciju maksimalne širine i visine koju uvećava 300.000 piksela i dužinu od 4GB.  </p>
+                    <img id="datoteke" src="../Blog2/Slike_blog2/datoteke1.jpg" alt="Datoteke photoshop-a">
+                </article>
+            </div>
+        </div>
+
+        <hr class="linija">
+
+        <!-- Dio u kojem sam pisala o samim verzijama Photoshopa i to sam obavila kroz samu listu.
+        U njemu se također nalazi i slika i tekst.-->
+        <div class="row">
+            <div class="verzija col-sm-7" id="Verzija">
+                <article>
+                    <h3 class="bold"> Verzije photoshop-a </h3>
+                    <h4 class="bold"> Verzija "BASIC": </h4>
+                        <ul>
+                            <li> Pupunjavanje sadržaja: na osnovu ove opcije u Photoshop-u dopunjavamo prazno mjesto pomoću algoritma tako što uzimamo približan dio slike koji nam nedostaje i dopunjavamo ga. </li>
+                            <li> Osnove lutkarstva: pomoću ove opcije možemo izbrisati sve osobe sa slike, oni se mogu nalaziti ispred nas, iza nas, sa nama, bez nas, ali uglavnom pruža mogućnost brisanja. </li>
+                            <li> Rubno pročišćavanje: sa ovom opcijom možemo da izaberemo dijelove slike koje mi ne možemo da odaberemo pojedinačno.  </li>
+                        </ul>
+                    <h4 class="bold"> Verzija "EXTENDED":</h4>
+                        <ul>
+                            <li> Mehanizam 3D: ova opcija nam pruža mnogo mogućnosti u photoshop-u, a neke od njih su da kopresujemo tekst i same objekte slike, isto tako da pravimo sjene, 3D materijale, da pravimo objekte, dodajemo i uređujemo samu sliku.  </li>
+                        </ul>
+                            <img id="verzija" src="../Blog2/Slike_blog2/verzija1.jpeg" alt="Verzija photoshop-a">
+                </article>
+            </div>
+
+            <!-- Dio na stranici u kojem sam pisala o alatima u Photoshopu. Ovaj dio zauzima 5 kolona.
+            U njemu se nalazi i tekst i slika. -->
+            <div class="alati col-sm-5" id="Alati">
+                <article>
+                    <h3 class="bold"> Alati photoshop-a </h3>
+                    <p> Photoshop posjeduje razne alate za uređivanje. Ima ih mnogo, ali ćemo navesti neke osnovne i objasniti ih detaljnije. Olovka u photoshop-u je vrlo koristan alat. Pomoću ove olovke možemo preciznije crtati, preciznije brisati predmete sa slike ili ljude. Uglavnom, dosta olakšavajući predmet pri upotrebi ovog programa. Drugi alat koji je isto tako važan je alat za oblikovanje. Pomoću ovog alata možemo oblikovati razne oblike, poput kvadrata, pravougaonika, elipse, kao i raznoraznih linija. Također, ovo možemo raditi i pomoću olovke. Nijedan oblik ne mora biti iz programa kojeg nam nudi, već oni nam isto tako pružaju da mi nacrtamo oblik po želji, neki predmet, životinju i da to ubacimo u našu sliku. I ovo je vid programa koji nam dozvoljava da pustimo našu maštu na volju. Treći alat koji ćemo navesti jeste alat za odabir. Po samom nazivu možemo da zaključimo da nam ovaj alat pruža da izaberemo neki dio slike kojeg želimo urediti i na taj način ga preciznije uredimo i poboljšamo. Postoji još mnogo alata u photoshop-u, ostale ćemo nabrojati, neki od njih su, mjerenje, navigacija, mijenjanje boja, 3D opcija, kropovanje, pomjeranje, uređivanje videa i mnogi drugi.  </p>
+                    <img id="alati" src="../Blog2/Slike_blog2/alati.png" alt="Alati photoshop-a">  
+                </article>
+            </div>
+        </div>
+
+        <hr class="linija">
+
+        <!-- Dio u kojem sam embeddala video koji je vezan za historiju Photoshopa. Ovaj video se nalazi na stranici YouTube
+        i zauzima 12 kolona. -->
+        <div class="row">
+            <div class="historija col-sm-12" id="Historija">
+                <h3 class="bold"> Historija photoshop-a </h3>
+                <!--Bootstrap uzet odavde : https://getbootstrap.com/docs/4.0/utilities/embed/-->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/cwk3O19rItQ" frameborder="0" allow="accelerom eter; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive.item"></iframe>
+                </div>   
+            </div>
+        </div>
+
+        <hr class="linija">
+
+        <!-- Dio u kojem se nalaze svi linkovi od web stranica sa kojih sam prikupljala literaturu za ovaj dio stranice, kao i
+        linkovi slika, jer su sve preuzete sa interneta. Ovaj dio zauzima 12 kolona jednog reda.-->
+        <div class="row">
+            <div class="literatura col-sm-12" id="Literatura">
+                <h2 class="bold"> Literatura </h2>
+                <h4> Web stranice: </h4>
+                <ol >
+                    <li class="stil"> <a class="boja" href="https://www.techopedia.com/definition/32364/adobe-photoshop" target="_blank"> Technopedia </a>
+                    </li>
+                    <li class="stil"> <a class="boja" href="https://itconnect.uw.edu/learn/workshops/online-tutorials/graphics-and-design-workshops/adobe-cs/photoshop/" target="_blank"> IT Connect </a>
+                    </li>
+                    <li class="stil"> <a class="boja" href="https://en.wikipedia.org/wiki/Adobe_Photoshop" target="_blank"> Wikipedia </a>
+                    </li>
+                    <li class="stil"> <a class="boja" href="https://whatis.techtarget.com/definition/Photoshop" target="_blank"> What Is </a>
+                    </li> 
+                </ol>
+                <h4> Web slike: </h4>
+                <ol>
+                    <li class="stil"> <a class="boja" href="https://sm.pcmag.com/t/pcmag_au/review/a/adobe-phot/adobe-photoshop-for-ipad_5htm.1200.jpg" target="_blank"> Photoshop </a>
+                    </li>
+                    <li class="stil"> <a class="boja" href="https://steemkr.com/histoyofphotoshop/@mi-azmi/history-of-photoshop-best-raster-image-editing-software" target="_blank"> Thomas i John Knoll </a>
+                    </li>
+                    <li class="stil"> <a class="boja" href="https://tricky-photoshop.com/wp-content/uploads/2017/07/cover.jpg" target="_blank"> Datoteke Photoshop-a </a>
+                    </li>
+                    <li class="stil"> <a class="boja" href="https://vidi-vishe.com/wp-content/uploads/2012/07/cs61.jpeg" target="_blank"> Verzija Photoshop-a </a>
+                    </li>
+                    <li class="stil"> <a class="boja" href="https://www.photoshopessentials.com/newsite/wp-content/uploads/2017/07/photoshop-tools-toolbar-tutorial.png" target="_blank"> Alati Photoshop-a </a>
+                    </li>
+                    <li class="stil"> <a class="boja" href="https://www.youtube.com/embed/cwk3O19rItQ" target="_blank"> Historija Photoshop-a </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <hr class="linija">
+
+    <!-- Ovo je footer koji se nalazi na svakoj stranici, sadrzi povratak na vrh stranice, moj instagram,
+    moj facebook. Instagram i facbook link vode na stranice mog profila. -->
+    <footer>
+        <div class="dno_stranice">
+            <a href="#top"> Povratak </a>
+            <a href="https://www.instagram.com/enaisen/" target="_blank"> Instagram </a>
+            <a href="https://www.facebook.com/enaisen/" target="_blank"> Facebook </a>
+        </div>
+    </footer> 
+</body>
+</html>
+            
+           

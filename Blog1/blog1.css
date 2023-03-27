@@ -1,0 +1,316 @@
+/* Sa ove stranice na internetu sam stavila pozadinu na svoju stranicu. 
+Ovu pozadinu sam također stavila na svaku svoju stranicu da bi izgledalo isto.
+Link: https://www.magicpattern.design/tools/css-backgrounds?fbclid=IwAR14T88TNFZjsvhiVzKQqyq65nCcxHVe4IqjY26Jru167TFRr8aZLhcv7Qc */
+body {
+    background-color: #f1b78e;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f1b78e 10px ), repeating-linear-gradient( #fba36555, #fba365 );
+}
+
+
+/* Pomoću ovoga sam uredila horizontalne linije koje se nalaze na mojoj stranici, i imaju svrhu da odvoje cjeline.
+Podesila sam joj širini, debljinu, kao i njenu boju, da bih sve to prilagodia izgledu stranice 
+Ovaj dizajn linije je isti za svaku stranicu i cjelinu. */
+.linija{
+    width: 75%;
+    border: 1px solid #e0876a;
+}
+
+/* Sa ovim sam prilagodila transparentu sliku na stranici, koja se nalazi u navigacijskom meniju.
+Smanjila sam joj širinu i visinu, kao i vidjljivost, da bude prozirnija. */
+#slika {
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+}
+
+/* Navigacijski meni koji je uređen po mom ukusu i prilagođen izgledu stranice.
+Izbacila sam ukrase, prilagodila boje, da se prelaskom preko linkova mijenja boja i pozadine i teksta i font slova isti
+kao na ostatku stranice. */
+.horizontalni_meni {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f4a688;
+    list-style-type: none;
+    border: 2.5px solid #e0876a;
+    border-radius: 5px;
+}
+
+.horizontalni_meni a {
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 70px;
+}
+
+.horizontalni_meni a:hover {
+    background-color: #fbefcc;
+    text-decoration: none;
+    color: black;
+}
+
+.horizontalni_meni a:active {
+    color: #e0876a;
+}
+
+.horizontalni_meni a:visited {
+    color: black;
+}
+
+/* Samo je napravljen okvir za vertikalni meni gdje se nalazi, njegova širina, da nema dekoracije, borderi. */
+.vertikalni_meni {
+    padding: 20px;
+    list-style-type: none;
+    background-color: #f4a688;
+    border: 2.5px solid #e0876a;
+    border-radius: 5px;
+}
+
+/* Detaljno uređen sadržaj u vertikalnom meniju, od boja, stila, teksta, prelaskom preko linkova mijenja boja i pozadine i teksta
+kao i na samoj ostatku starnice. */
+.sadrzaj {
+    width: 80%;
+    padding: 25px;
+}
+
+.sadrzaj a {
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+.sadrzaj a:hover {
+    background-color: #fbefcc;
+    text-decoration: none;
+    color: black;
+}
+
+.sadrzaj a:visited {
+    color: black;
+}
+
+.sadrzaj a:active {
+    color: #e0876a;
+}
+
+/* Slika koja se nalazi ispod vetikalnog menja, prilagođena veličina i širina, dodan okviri i pomjerena da bi se nalazila
+na smoj sredini tog dijela. */
+#slika2 {
+    width: 50%;
+    margin-left: 20%;
+    border-radius: 5px;
+    border: 2.5px solid #e0876a
+}
+
+/* Klasa u kojoj sam bodirala svaki naslov */
+.bold {
+    font-weight: bold;
+}
+
+/* Svaki h3 naslov stavljen da bude italic */
+h3 {
+    font-style: italic;
+}
+
+/* Svaki h1 naslov stavljen da bude italic */
+h1 {
+    font-style: italic;
+} 
+
+/* Svaki h2 naslov stavljen da bude italic */
+h2 {
+    font-style: italic;
+}
+
+/* Svaki h4 naslov da bude italic */
+h4 {
+    font-style: italic;
+} 
+
+/* Kao sve do sad prethodno, sve je isto minjanjano i prilagođeno. U ovakvim klasama se mijenjala pozadina, borederi, font slova
+i njihova veličina. */
+.web_design {
+    border: 2.5px solid #e0876a;
+    border-radius: 5px;
+    background-color: #e0876a;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Slika koja je vezana za prethodni dio je prilagođena njenom širinom i namještena na poziciju koju ja želim. Dodan također
+okvir na sliku. Isto tako sve slike u ovim djelovima su uređene sa okvirom oko njih, postavljala se širina i visina i njihova pozicija. */
+#slika3 {
+    border-radius: 5px;
+    border: 2.5px solid #f4a688;
+    width: 50%;
+    margin-left: 20%;
+}
+
+.elementi {
+    border: 2.5px solid #e0876a;
+    border-radius: 5px;
+    background-color: #f4a688;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#elementi_slika {
+    border-radius: 5px;
+    border: 2.5px solid #e0876a;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.historija {
+    border: 2.5px solid #e0876a;
+    border-radius: 5px;
+    background-color: #e0876a;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#historija_slika {
+    border-radius: 5px;
+    border: 2.5px solid #f4a688;
+    width: 30%;
+    margin-left: 30%;
+}
+
+.napredak {
+    border: 2.5px solid #e0876a;
+    border-radius: 5px;
+    background-color: #f4a688;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#napredak_slika {
+    border-radius: 5px;
+    border: 2.5px solid #e0876a;
+    width: 50%;
+    margin-left: 20%;
+}
+
+.razvoj {
+    border: 2.5px solid #e0876a;
+    border-radius: 5px;
+    background-color: #e0876a;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#razvoj_slika {
+    border-radius: 5px;
+    border: 2.5px solid #f4a688;
+    width: 50%;
+    margin-left: 20%;
+
+}
+
+.razdoblja {
+    border: 2.5px solid #e0876a;
+    border-radius: 5px;
+    background-color: #f4a688;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Uređena tabela tako da odgovara samom izgledu stranice. Dodani njeni borderi, boja, da bi se njen izgled uklapao
+u stranicu. */
+th {
+    border: 2.5px solid #e0876a;
+    background-color: #f1b78e;
+    color: black;
+}
+
+tr {
+    border: 2.5px solid #e0876a;
+    background-color: #f1b78e;
+    color: black;
+}
+
+td {
+    border: 2.5px solid #e0876a;
+    background-color: #f1b78e;
+    color: black;
+}
+
+/* Sa ove dvije klase sam prosirila jednu kolonu u tabeli i centrirala jedan naslov u drugom redu tabele. */
+.sirina {
+    width: 100px;
+}
+
+.sredina {
+    text-align: center;
+}
+
+.literatura {
+    border: 2.5px solid #e0876a;
+    border-radius: 5px;
+    background-color: #e0876a;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Promjena boje za linkove */
+.boja {
+    color: black;
+}
+
+/* Uređenje linkova, bez dekoracija i promjena stila i boja stila. */
+.stil {
+    list-style-type: numbers;
+    color: black;
+}
+
+/* Na linkove dodana pozadina, prelaskom preko linkova mijenanje boja i pozadine i teksta. Prilagođen je i odgovara
+izgledu same stranice. */
+.literatura a:hover {
+    background-color: #fbefcc;
+    text-decoration: none;
+    color: white;
+}
+
+.literatura a:active {
+    color: #e0876a;
+}
+
+.literatura a:visited {
+    color: black;
+}
+
+/* Footer koji se nalazi u svakoj stranici, napravila sam ga sa jednostavno,
+da se prelaskom preko linkova mijenja boja i pozadine i teksta i stavila sam mu isti font slova kao u ostatku stranice. 
+Uredila sam ga tako da odgovara izgledu stranice i naravno po mom ukusu. */
+.dno_stranice {
+    padding: 20px;
+    margin: 20px;
+    display: block;
+    list-style-type: none;
+    background-color: #f4a688;
+    border-radius: 5px;
+    border: 2.5px solid #e0876a
+}
+
+.dno_stranice a {
+    margin-left: 20%;   
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.dno_stranice a:hover {
+    background-color: #fbefcc;
+    text-decoration: none;
+    color: black;
+}
+
+.dno_stranice a:active {
+    color: #e0876a;
+}
+
+.dno_stranice a:visited {
+    color: black;
+}
